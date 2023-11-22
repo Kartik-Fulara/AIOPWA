@@ -1,0 +1,32 @@
+{
+    "name": "ALL IN ONE",
+    "short_name": "AIO",
+    "icons": [
+        {
+            "src": "./assets/img/aio-16.png",
+            "sizes": "16x16",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./assets/img/aio-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/img/aio-48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/img/aio-64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "start_url": "/games/",
+    "display": "standalone",
+    "orientation": "portrait"
+}

@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/games/tic-tac-toe.css">
+    <script src="../../assets/js/games/tic-tac-toe.js"></script>
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <main class="background">
+        <header class="header">
+            <a href="/games/" class="exitImg hideImage" id="exitImg">
+                <img src="../../assets/img/close.svg" alt="exit">
+            </a>
+            <h1 class="title">Tic Tac Toe</h1>
+        </header>
+
+        <section class="gameWrapper">
+            <div class="display">
+                <h2 data-display="loading">
+                    Game Starting...
+                </h2>
+                <h2 class="hide" data-display="started">
+                    Player <span class="display-player playerX"></span>'s turn
+                </h2>
+            </div>
+            <div class="container">
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+            </div>
+        </section>
+
+        <section class="modal" data-modal>
+            <div class="modalContainer">
+                <label class="modalTitle">
+                    Enter Players Names
+                </label>
+                <form class="playerForm" data-player-form>
+                    <div class="formInput">
+                        <label class="playerX" for="playerX">
+                            X
+                        </label>
+                        <input type="text" name="playerX" placeholder="Player X" maxlength="12" data-player-name="X" />
+                    </div>
+                    <div class="formInput">
+                        <label class="playerO" for="playerO">
+                            O
+                        </label>
+                        <input type="text" name="playerO" placeholder="Player O" maxlength="12" data-player-name="O" />
+                    </div>
+                    <div class="modalControls">
+                        <button class="submit gameBtn" type="submit">
+                            Start Game
+                        </button>
+                        <a href="/games/" class="exit gameBtn">
+                            Exit Game
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="announcer"></div>
+            <div class="controls">
+                <button id="newGame">New Game</button>
+                <button id="reset">Reset Board</button>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

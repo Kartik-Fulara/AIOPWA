@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>ALL IN ONE Games</title>
+</head>
+
+<body>
+    <main>
+        <header class="header scroll-header" id="header">
+            <nav class="nav container">
+                <label>
+                    ALL IN ONE
+                </label>
+
+                <div class="nav__menu desktop">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <button onclick="(e)=>navigate(e)" role="link" class="nav__link" data-navigate="tools">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                                <span class="nav__name">Tools</span>
+                            </button>
+                        </li>
+
+                        <li class="nav__item">
+                            <button role="link" onclick="(e)=>navigate(e)" class="nav__link active-link"
+                                data-navigate="games">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Games</span>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="container section section__height" id="home">
+            <a href="tic-tac-toe" class="app">
+                <img src="../assets/img/tic-tac-toe.png" alt="tic tac toe" class="app__img">
+                <span class="app__title">
+                    Tic Tac Toe
+                </span>
+            </a>
+        </section>
+        <div class="nav__menu mobile">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <button class="nav__link" data-navigate="tools">
+                        <i class='bx bx-home-alt nav__icon'></i>
+                        <span class="nav__name">Tools</span>
+                    </button>
+                </li>
+
+                <li class="nav__item">
+                    <button class="nav__link active-link" data-navigate="games">
+                        <i class='bx bx-user nav__icon'></i>
+                        <span class="nav__name">Games</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="../assets/js/main.js" typw="text/javascript"></script>
+</body>
+
+</html>
