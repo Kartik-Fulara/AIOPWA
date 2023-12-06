@@ -83,6 +83,7 @@ label {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .section__title {
@@ -295,6 +296,11 @@ label {
   .desktop {
     display: none;
   }
+
+  .section {
+    height: max-content;
+    gap: 5px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -305,4 +311,6 @@ label {
   .desktop {
     display: flex;
   }
+
+
 }
